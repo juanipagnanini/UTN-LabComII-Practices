@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2.8rem 7.2rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background: url("../asset/img/pokeball.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.formulario label {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+.formulario input {
+    margin: 10px;
+}
+
+.imgPokemon {
+    height: 2rem;
+}

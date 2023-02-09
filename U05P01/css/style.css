@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid tomato;
+    border-radius: 10px;
+    height: 10rem;
+    margin: 10px;
+    width: 50%;
+}
+
+.caja h2 {
+    border: 1px solid #313131;
+    border-radius: 5px;
+    padding: 0 1rem;
+    background-color: tomato;
+}
+#parrafo, #parrafo2 {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: lightsalmon;
+}

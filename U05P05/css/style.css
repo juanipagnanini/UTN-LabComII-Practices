@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.contenedor  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    width: fit-content;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: darkgray;
+}
+
+.botones input{
+    border-radius: 5px;
+    margin: 2px;
+}
+
+#suma {
+    border-bottom: 1px solid #000;
+}

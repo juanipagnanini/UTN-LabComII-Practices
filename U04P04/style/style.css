@@ -1,0 +1,18 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    padding: 10px;
+    margin: 20px 10px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boton .valor {
+    text-align: center;
+    font-weight: bold;
+}

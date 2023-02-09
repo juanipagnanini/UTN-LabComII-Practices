@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3 - Unidad 4</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <main>
+        <section class="secciones">
+            <h2>Calcular mayor:</h2>
+            <form action="" class="form">
+                <label for="num1">Ingrese primer numero:</label>
+                <input type="text" id="num1">
+                <label for="num2">Ingrese segundo numero:</label>
+                <input type="text" id="num2">
+                <label for="num3">Ingrese tercer numero:</label>
+                <input type="text" id="num3">
+                <button type="button" onclick="calcularMayor()" id="boton1">Calcular mayor</button>
+            </form>
+        </section>
+        <section class="secciones">
+            <h2>Positivo, negativo o cero:</h2>
+            <form action="" class="form">
+                <label for="num4">Ingrese un numero:</label>
+                <input type="text" id="num4">
+                <button type="button" onclick="positivoONegativo()">Calcular:</button>
+            </form>
+        </section>
+        <section class="secciones">
+            <h2>Ingrese datos del postulante:</h2>
+            <form action="" class="form">
+                <label for="nombre">Nombre del postulante:</label>
+                <input type="text" id="nombre">
+                <label for="cantPreguntas">Cantidad de preguntas realizadas:</label>
+                <input type="text" id="cantPreguntas">
+                <label for="cantCorrectas">Cantidad de preguntas acertadas:</label>
+                <input type="text" id="cantCorrectas">
+                <button type="button" onclick="calcularPromedio()">Calcular nivel:</button>
+                <p id="resultado"></p>
+            </form>
+        </section>
+        <section class="secciones">
+            <h2>Ingrese datos del alumno:</h2>
+            <form action="" class="lista">
+                <label for="nombre2">Nombre:</label>
+                <input type="text" id="nombre2">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido">
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" id="domicilio">
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso">
+                <label for="carrera">Carrera:</label>
+                <input type="text" id="carrera">
+                <label for="materia">Materia:</label>
+                <input type="text" id="domicilio">
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" id="domicilio">
+                <button type="button" onclick="calcularPromedio()">Calcular nivel:</button>
+                <p id="resultado"></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

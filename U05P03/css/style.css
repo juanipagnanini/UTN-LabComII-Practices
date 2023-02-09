@@ -1,0 +1,33 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+#formulario input, #formulario label, #formulario button {
+    margin: 10px;
+}
+
+#form-numeros {
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#form-numeros input , #form-numeros label {
+    margin: 5px 0;
+}
+
+#form-numeros button {
+    margin: 5px 0;
+}

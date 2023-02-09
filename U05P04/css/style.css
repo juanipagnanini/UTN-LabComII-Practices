@@ -1,0 +1,34 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    width: fit-content;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.contenedor h2 {
+    border-bottom: 1px solid #000;
+}
+
+.contenedor form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor form label, .contenedor form input {
+    margin: 10px;
+}
+
+#resultado {
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    visibility: hidden;
+}
