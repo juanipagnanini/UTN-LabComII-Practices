@@ -1,0 +1,39 @@
+/*CENTRADO ELEMENTOS MAIN*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/*CENTRADO ELEMENTOS DEL FORMULARIO*/
+section form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+/*CENTRADO Y SEPARACIÓN DE BOTONES*/
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/*ESTILADOS DE FORMULARIOS*/
+input, textarea{
+    width: 300px;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+label, div{
+    margin-top: 10px;
+}
+
+/*TEXTO NEGRITA*/
+
+#bold{
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+form {       /* Utilizamos flex para centrar el form */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form label{
+    font-size: 14px;
+}
+
+/*INPUT DONDE SE AGREGA LA CIUDAD   Mediante ID*/
+#addCity{
+    width: 200px;
+    padding: 7px;        
+    border-radius: 5px;
+    margin: 2px;
+}
+
+
+/*CARTELES DONDE MUESTRA EL ESTADO DE CARGA DE CIUDAD*/
+#alerts{
+    color: black;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}

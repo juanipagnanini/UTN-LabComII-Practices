@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/climaIcon.png">
+    <title>TUP LC2 - TP Integrador</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/help.css">
+    <!-- JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/help.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="img/climaIcon.png" alt="icono">
+            <span>Clima App</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Clima</a></li>
+                <li><a href="add-city.html">Agregar Ciudad</a></li>
+                <li class="current-page"><a href="help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>Ayuda Clima App V.1.0</h2>
+        <p class="parrafo">Esta App te permite consultar el clima de una cuidad en particular
+            utilizando la API de <a href="http://openweathermap.org/api" target="_blank">OpenWeatherMap</a>.</p>
+
+        <p> Para poder consultar el clima, primero deberá <a href="/add-city.html">Agregar un cuidad</a>
+            y lugeo seleccionar la Cuidad en cuestión desde la página <a href="/index.html">Clima</a></p>
+        <section>
+            <form action="javascrip:void(0);" id="contact-form">
+                <div class="entrada">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+
+                <div class="entrada">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="entrada">
+                    <label for="messaje">Mensajeria:</label>
+                    <input type="text" name="messaje" id="messaje" size="30" maxlength="100"
+                        style="height:14rem; width:18rem;">
+                </div>
+
+                <div class="entrada" id="salida">
+                    <button type="reset">Limpiar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <!-- Sección donde se muestra el mensaje de status sobre el envio del email-->
+        <section id="statusEmail">
+        </section>
+        
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
+</body>
+
+</html>

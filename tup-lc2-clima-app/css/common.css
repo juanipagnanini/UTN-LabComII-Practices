@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+
+}
+
+:root {
+    /* Declaro variables CSS con colores principales */
+    --color-theme: #00594c;
+    --color-active: #5df2d6;
+    --color-back-active: #04957d;
+    --color-gradient: linear-gradient(to right, var(--color-theme), var(--color-back-active));
+    --color-success: #28a745;
+    --color-warning: #ffc107;
+    --color-error: #dc3545;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button, a {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*gradiante*/
+    background: var(--color-gradient);
+    /*cambio: redondea bordes*/
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 2px 2px #5df2d6;
+}
+
+nav > ul {    /* Indica la disposicion de la lista no ordenada con respecto al NAV. */
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+nav li {
+    flex: 0 0 auto;
+}
+
+nav li a {            /* Indica el estilo de la barra de navegacion. */
+    display: block;
+    padding: 16px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--color-active);
+}
+
+nav li.current-page a {
+    color: var(--color-theme);
+    background-color: var(--color-active);
+    pointer-events: none;
+    /*cambio: redondea borde de los botones del nav*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main {
+    margin-top: 120px;
+    overflow: auto;
+    padding: 16px;
+    padding-bottom: 60px;
+    height: calc(100% - 120px);
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+h1>img {
+    width: 70px;
+    vertical-align: middle;
+}
+
+h2 {
+    color: var(--color-theme);
+    margin: 16px 0;
+    text-align: center;
+}
+
+h3 {
+    color: var(--color-theme);
+    margin: 8px 0;
+}
+
+main section {  /* Indica el estilo y disposicion del main (Consultar/DebeAgregarCiudad). */
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    /*gradiante*/
+    background: var(--color-gradient);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: -2px -2px 2px 2px #5df2d6;
+}
+
+footer p {
+    font-size: small;
+    color: white;
+}
+
+main p {
+    margin-bottom: 16px;
+}
+
+/* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
+@media (min-width: 400px) {
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.entrada {
+    margin: 5%;
+}
+
+/*BOTONES COMUNES A TODAS LAS PÁGINAS*/
+form button{
+    background-color: var(--color-theme);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;        
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;   /*El cursor se convierte en una manito*/
+}
+
+/*CARTELES ESTADOS "CARGADO", "ALERTA", "ERROR"*/
+.status{
+    width: 350px;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+.exito{
+    background-color: var(--color-success);
+}
+.error{
+    background-color: var(--color-error);
+}
+.cuidado{
+    background-color: var(--color-warning);
+}
+
+/*LOADER*/
+.loader-animation{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.loader-animation > div {
+    width: 1rem;
+    height: 1rem;
+    margin: 3rem .5rem;
+    border-radius: 50%;
+    background-color: var(--color-theme);
+    animation: loader-animation .6s infinite alternate;
+}
+
+@keyframes loader-animation{
+    to{
+        opacity: .1;
+        transform: translate3d(0, -1rem, 0);
+    }
+}
+
+.loader-animation > div:nth-child(2){
+    animation-delay: .1s;
+}
+.loader-animation > div:nth-child(3){
+    animation-delay: .15s;
+}
