@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+
+        td,
+
+        th 
+        {
+            border: 1px solid black;
+
+            border-collapse: collapse;
+
+            padding: 5px;
+        }
+
+        table
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <h4> Tabla 1 </h4>
+        <caption>
+            <b>Lenguajes de programación</b> 
+        </caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Creador</th>
+                    <th>Lanzamiento</th>
+                    <th>Paradigma</th> 
+                </tr>
+            <thead>
+            <tbody>
+                <tr>
+                    <td>Python</td>
+                    <td>Guido Van Rossum</td>
+                    <td>Año 1991</td>
+                    <td>Multiparadigma</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Brendan Eich</td>
+                    <td>Año 1995</td>
+                    <td>Multiparadigma</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>Anders Hejlsberg</td>
+                    <td>Año 2000</td>
+                    <td>Estructurado, imperativo, orientado a objetos, dirigido por eventos, funcional, genérico, reflexivo</td>
+                </tr>
+            </tbody> 
+    </table>
+    <hr>
+    <table>
+        <h4> Tabla 2 </h4>
+        <caption>
+            <b>Cortes de carne</b> 
+        </caption>
+        <thead>
+            <tr>
+                <th>Nombre del corte</th>
+                <th colspan="2"> Animal/Cria</th>
+                <th>Formas de Cocción recomendada</th>
+                <th>C/S Hueso</th>
+                <th>Lugares donde comprar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Vacío</td>
+                <td>Vaca</td>
+                <td>Ternero</td>
+                <td rowspan="5">Estaca / Parrilla</td>
+                <td rowspan="2">S / Hueso</td>
+                <td rowspan="7"><a href="https://www.lagallega.com.ar/ccompra.asp" target="_blank">La Gallega Supermercado</a></td>
+            </tr>
+            <tr>
+                <td>Cerdo</td>
+                <td>Lechón</td>
+                
+                
+            </tr>
+            <tr>
+                <td rowspan="3">Costilla</td>
+                <td>Vaca</td>
+                <td>Ternero</td>
+                <td rowspan="3">C / Hueso</td>
+                
+            </tr>
+            <tr>
+                <td>Cerdo</td>
+                <td>Lechón</td>
+                
+                
+            </tr>
+            <tr>
+                <td>Cabra</td>
+                <td>Cabrito</td>
+                
+                
+            </tr>
+            <tr>
+                <td>Pechuga</td>
+                <td rowspan="2">Gallina</td>
+                <td rowspan="2">Pollo</td>
+                <td rowspan="2">Parrilla/Disco/Plancha</td>
+                <td >S / Hueso</td>
+
+                
+            </tr>
+            <tr>
+                <td>Pata/Muslo</td>
+                <td >C / Hueso</td>
+               
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
